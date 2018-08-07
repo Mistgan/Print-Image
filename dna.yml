@@ -1,0 +1,11 @@
+name: "print_image"
+type: "neuron"
+author: "Stagiaire"
+
+kalliope_supported_version:
+  - 0.5
+
+tags:
+  - "print"
+  - "image"
+  - "video"
