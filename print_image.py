@@ -1,7 +1,9 @@
+#!/usr/bin/python
+# -*-coding:Latin-1 -*
+
 import logging
 from PIL import Image
 import ImageFilter
-
 
 from kalliope.core.NeuronModule import NeuronModule, InvalidParameterException
 
@@ -19,12 +21,8 @@ class Print_image(NeuronModule):
         # check parameters
         if self._is_parameters_ok():
             logger.debug("Image im return %s" % im)
-
             im = Image.open(kwargs.get('media_url', None))
-
             self.say(im)
-
-
 
     def _is_parameters_ok(self):
         """
